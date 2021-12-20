@@ -1,0 +1,5 @@
+FROM alpine
+COPY . /
+WORKDIR /
+EXPOSE 8080
+ENTRYPOINT ["./gogin"]
