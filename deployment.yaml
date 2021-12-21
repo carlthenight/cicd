@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: go-app-container
-          image: go-gin-img
           imagePullPolicy: Never
+          image: go-gin-img
           ports:
             - containerPort: 8080

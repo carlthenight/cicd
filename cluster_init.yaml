@@ -1,6 +1,6 @@
 apiVersion: k3d.io/v1alpha3
 kind: Simple
-name: go-cluster
+name: go
 servers: 1
 agents: 2
 kubeAPI: # same as `--api-port myhost.my.domain:6445` (where the name would resolve to 127.0.0.1)
