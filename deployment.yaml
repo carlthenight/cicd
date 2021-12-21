@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-go-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: go-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: go-app-container
-          image: go-gin-test
+          image: go-gin-img
           imagePullPolicy: Never
           ports:
             - containerPort: 8080
