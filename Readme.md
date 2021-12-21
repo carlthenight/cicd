@@ -39,7 +39,7 @@
 :bookmark: Dockerfile文件的编写。  
 :bookmark: Docker镜像的打包、使用、部署。  
 :bookmark: Jenkins的Pipeline使用、Poll SCM轮询。  
-:bookmark: 使用k3d进行k8s的集群模拟，部署。  
+:bookmark: 使用k3d进行k8s的集群模拟。  
 :bookmark: 使用kubectl命令进行部署、暴露服务。   
 :bookmark: 使用Yaml文件显示定义k3d集群和deployment。   
 :bookmark: 了解CICD过程中的概念。
@@ -49,7 +49,8 @@
  ```groovy 
  sh "k3d image import -c go go-gin-img"
  ```
-2. Jenkins没有部署到有公网ip的服务器中，或者使用内网穿透工具，所以webhook暂时无法使用，只能使用 poll SCM 定时轮询查看github有没有更新代码。  
+2. Jenkins没有部署到有公网ip的服务器中，或者使用内网穿透工具，所以webhook暂时无法使用，只能使用 poll SCM 定时轮询查看github有没有更新代码。 
+3. :joy:...还有很多可以优化，流程写得太死。 
 
 ## :books:参考：
 1. 如何在本地快速启动一个 K8S 集群 - https://zhuanlan.zhihu.com/p/357907926
