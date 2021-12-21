@@ -12,13 +12,19 @@
 ---
 
 #### :pencil2:完成情况:
-- [x] :white_check_mark:**使用 Yaml 文件显式定义k8s集群。**
-- [ ] :red_circle:**构建服务镜像。**
-- [ ] :red_circle:**使用Jenkins file 文件定义流水线。**
-- [ ] :red_circle:**画出各个组件之间的数据流关系。**
-- [ ] :red_circle:**每个关键步骤执行成功时的日志或截图。**
-- [ ] :red_circle:**一键触发或提交代码之后自动触发执行。**
+:white_check_mark:**使用 Yaml 文件显式定义k8s集群。**
+:white_check_mark:**构建服务镜像。Dockerfile。**
+:white_check_mark:**部署服务到k8s集群。**
+:red_circle:**使用Jenkins file 文件定义流水线。**
+:red_circle:**画出各个组件之间的数据流关系。**
+:red_circle:**每个关键步骤执行成功时的日志或截图。**
+:red_circle:**一键触发或提交代码之后自动触发执行。**
+
+---
+
+#### 使用技术:
+
 
 ---
 ###:rocket:收获
-啊
+

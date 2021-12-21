@@ -8,14 +8,6 @@ kubeAPI: # same as `--api-port myhost.my.domain:6445` (where the name would reso
   hostIP: "127.0.0.1"
   hostPort: "6445"
 ports:
-  - port: 8081:81 # same as `--port '8080:80@loadbalancer'`
+  - port: 8081:8080 # same as `--port '8081:80800@loadbalancer'`
     nodeFilters:
       - loadbalancer
-# registries:
-#   create:
-#     name: myregistry
-#   config: |
-#     mirrors:
-#       "my.aliyun.registry":
-#         endpoint:
-#           - https://w8nx905k.mirror.aliyuncs.com
