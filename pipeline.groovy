@@ -2,6 +2,15 @@ pipeline {
     agent any
 
     stages {
+
+        stage('Pre Work') {
+            steps {
+                //删除k3d集群
+                sh "k3d cluster delete go"
+                sh "rm -rf ./*"
+            }
+        }
+
         stage('git clone') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [],
@@ -36,8 +45,7 @@ pipeline {
         }
         stage('Test'){
             steps{
-                //测试服务
-                sh "curl 127.0.0.1:8081"    
+                echo "do TEST here!" 
             }
         }
     }
